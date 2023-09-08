@@ -21,7 +21,6 @@ public class JBus{
         } else{
             a = beforeDiscount - afterDiscount;
             a = (a/beforeDiscount)*100;
-            //belum konversi dari int -> float
         }
         return a;
     }
