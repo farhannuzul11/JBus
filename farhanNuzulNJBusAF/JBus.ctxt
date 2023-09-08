@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=JBus
+comment1.params=
+comment1.target=int\ getBusId()
+comment2.params=
+comment2.target=java.lang.String\ getBusName()
+comment3.params=
+comment3.target=boolean\ isDiscount()
+comment4.params=beforeDiscount\ afterDiscount
+comment4.target=float\ getDiscountPercentage(int,\ int)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
