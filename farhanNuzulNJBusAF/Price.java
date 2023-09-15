@@ -4,9 +4,9 @@ package farhanNuzulNJBusAF;
 
 public class Price
 {
-    private double price;
-    private int discount;
-    private double rebate;
+    public double price;
+    public int discount;
+    public double rebate;
     
     public Price(double price){
         this.price = price;
@@ -25,30 +25,5 @@ public class Price
         this.discount = 0;
         this.rebate = rebate;        
     }
-    
-    //getter
-    public double getPrice() {
-        return price;
-    }
 
-    public int getDiscount() {
-        return discount;
-    }
-
-    public double getRebate() {
-        return rebate;
-    }
-    
-    //setter
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public void setDiscount(int discount) {
-        this.discount = discount;
-    }
-
-    public void setRebate(double rebate) {
-        this.rebate = rebate;
-    }
 }

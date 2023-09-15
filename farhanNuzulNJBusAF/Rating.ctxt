@@ -2,8 +2,4 @@
 comment0.target=Rating
 comment1.params=
 comment1.target=Rating()
-comment2.params=
-comment2.target=long\ getTotal()
-comment3.params=
-comment3.target=long\ getCount()
-numComments=4
+numComments=2
