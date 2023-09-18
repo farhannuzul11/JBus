@@ -10,7 +10,7 @@ public class JBus{
     
     public static void main (String [] args){
         Price tesPrice = new Price(1000);
-        Voucher tes = new Voucher("Netlab", 100, Type.DISCOUNT, 1500, 20);
+        Voucher tes = new Voucher("Netlab", 100, Type.DISCOUNT, 100, 20);
         
         System.out.println(tes.name);
         System.out.println(tes.canApply(tesPrice));
