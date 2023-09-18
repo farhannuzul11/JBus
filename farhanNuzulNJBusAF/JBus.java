@@ -1,19 +1,28 @@
 package farhanNuzulNJBusAF;
 
 public class JBus{
-    public static Bus createBus(){
+    
+    /*public static Bus createBus(){
         Price price = new Price(750000, 5);
         Bus bus = new Bus ("Netlab", Facility.LUNCH, price, 25);
         return bus;
-    }
+    }*/
     
     public static void main (String [] args){
-        Bus testBus = createBus();
+        Price tesPrice = new Price(1000);
+        Voucher tes = new Voucher("Netlab", 100, Type.DISCOUNT, 1500, 20);
+        
+        System.out.println(tes.name);
+        System.out.println(tes.canApply(tesPrice));
+        System.out.println(tes.apply(tesPrice));
+        /*Bus testBus = createBus();
         System.out.println(testBus.name);
         System.out.println(testBus.facility);
         System.out.println(testBus.price.price);
-        System.out.println(testBus.capacity);
-    }   
+        System.out.println(testBus.capacity);*/
+    }
+    
+
 }
 
 /*public class JBus{

@@ -12,6 +12,6 @@ public class Bus{
         this.facility = facility;
         this.capacity = capacity;
         this.price = price;
-    }
+    } //setter setter
     
 }
