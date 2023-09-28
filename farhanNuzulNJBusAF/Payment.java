@@ -19,7 +19,7 @@ public class Payment extends Invoice{
         this.busSeat = busSeat;        
     }
     
-    public String print(){
+    public String toString(){
         return "id: " + this.id + " Time: " + this.time + " buyerID: "+ this.buyerId + " renterId: " + this.renterId + " busId: " + this.busId + " departureDate: " + this.departureDate + " busSeat: " + this.busSeat;
     }
     

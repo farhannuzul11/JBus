@@ -12,4 +12,7 @@ public class Account extends Serializable{
         this.password = password;
     }
     
+    public String toString(){
+        return "id: " + this.id + " name: " + this.name + " email: " + this.email + " password: " + this.password;
+    }
 }
