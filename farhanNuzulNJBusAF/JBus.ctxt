@@ -2,5 +2,4 @@
 comment0.target=JBus
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment1.text=public\ static\ Bus\ createBus(){\r\n\ \ \ \ \ \ \ \ Price\ price\ \=\ new\ Price(750000,\ 5);\r\n\ \ \ \ \ \ \ \ Bus\ bus\ \=\ new\ Bus\ ("Netlab",\ Facility.LUNCH,\ price,\ 25);\r\n\ \ \ \ \ \ \ \ return\ bus;\r\n}
 numComments=2
