@@ -49,6 +49,6 @@ public class Bus extends Serializable implements FileParser{
     }
     
     public void printSchedule (Schedule schedule){
-        System.out.println();
+        System.out.println("Tanggal Berangkat:" + schedule);
     }
 }
