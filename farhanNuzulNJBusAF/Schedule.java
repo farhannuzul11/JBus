@@ -23,7 +23,7 @@ public class Schedule {
     private void initializeSeatAvailability(int numberOfSeats) {
         for (int seatNumber = 1; seatNumber <= numberOfSeats; seatNumber++) {
             String formattedSeatNumber = String.format("%02d", seatNumber);
-            seatAvailability.put("RS" + formattedSeatNumber, true);
+            seatAvailability.put("AF" + formattedSeatNumber, true);
         }
     }
 
