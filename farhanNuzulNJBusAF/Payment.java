@@ -1,29 +1,49 @@
 package farhanNuzulNJBusAF;
 
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 public class Payment extends Invoice {
     private int busId;
-    private Calendar departureDate;
-    private String busSeat;
+    public Timestamp departureDate;
+    public String busSeat;
 
-    public Payment(int id, int buyerId, int renterId, int busId, String busSeat) {
+    public Payment(int id, int buyerId, int renterId, int busId, String busSeat, Timestamp departureDate) {
         super(id, buyerId, renterId);
         this.busId = busId;
         this.busSeat = busSeat;
-        // Set departureDate to 2 days from now
-        this.departureDate = Calendar.getInstance();
-        this.departureDate.add(Calendar.DAY_OF_MONTH, 2);
+        this.departureDate = new Timestamp(System.currentTimeMillis());
     }
 
-    public Payment(int id, Account buyer, Renter renter, int busId, String busSeat) {
+    public Payment(int id, Account buyer, Renter renter, int busId, String busSeat, Timestamp departureDate) {
         super(id, buyer, renter);
         this.busId = busId;
         this.busSeat = busSeat;
-        // Set departureDate to 2 days from now
-        this.departureDate = Calendar.getInstance();
-        this.departureDate.add(Calendar.DAY_OF_MONTH, 2);
+        this.departureDate = new Timestamp(System.currentTimeMillis());
+    }
+    
+    public static boolean isAvailable(Timestamp departureSchedule, String seat, Bus bus) {
+        for (Schedule schedule : bus.schedules) {
+            if (schedule.departureSchedule.equals(departureSchedule) && schedule.seatAvailability.containsKey(seat)) {
+                Boolean isSeatAvailable = schedule.seatAvailability.get(seat);
+                return isSeatAvailable != null && isSeatAvailable;
+            }
+        }
+        return false; 
+    }
+    
+    public static boolean makeBooking(Timestamp departureSchedule, String seat, Bus bus) {
+    for (Schedule schedule : bus.schedules) {
+        if (schedule.departureSchedule.equals(departureSchedule)) {
+            if (schedule.isSeatAvailable(seat)) {
+                schedule.bookSeat(seat);
+                return true; 
+            } else {
+                return false; 
+            }
+        }
+    }
+    return false; 
     }
 
     public String getDepartureInfo() {

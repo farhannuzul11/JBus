@@ -3,6 +3,7 @@ package farhanNuzulNJBusAF;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.sql.Timestamp;
 
 public class Bus extends Serializable implements FileParser {
     public String name;
@@ -27,7 +28,7 @@ public class Bus extends Serializable implements FileParser {
         this.arrival = arrival;
         this.schedules = new ArrayList<>();
     }
-
+    
     public String toString() {
         return "id: " + this.id + " name: " + this.name + " facility: " + this.facility + " price: " + this.price + " capacity: " + this.capacity + " busType: " + this.busType + " city: " + this.city + " departure: " + this.departure + " arrival: " + this.arrival;
     }
@@ -42,15 +43,8 @@ public class Bus extends Serializable implements FileParser {
         return true;
     }
 
-    public void addSchedule(Calendar calendar) {
-        Schedule schedule = new Schedule(calendar, this.capacity);
-        this.schedules.add(schedule);
+    public void addSchedule(Timestamp schedule) { 
+        schedules.add(new Schedule(schedule, this.capacity));
     }
 
-    public void printSchedule(Schedule schedule) {
-        System.out.println("Tanggal Keberangkatan: " + schedule.departureSchedule.getTime());
-        for (String seat : schedule.seatAvailability.keySet()) {
-            System.out.println("Kursi " + seat + ": " + (schedule.seatAvailability.get(seat) ? "Tersedia" : "Tidak Tersedia"));
-        }
-    }
 }

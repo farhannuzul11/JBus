@@ -1,9 +1,9 @@
 package farhanNuzulNJBusAF;
 
-import java.util.Calendar;
+import java.sql.Timestamp;
 
 public class Invoice extends Serializable{
-    public Calendar time;
+    public Timestamp time;
     public BusRating rating;
     public int buyerId;
     public int renterId;
@@ -21,18 +21,17 @@ public class Invoice extends Serializable{
         super(id);
         this.buyerId = buyerId;
         this.renterId = renterId;
-        this.time = Calendar.getInstance();
+        this.time = new Timestamp(System.currentTimeMillis());
         this.rating = BusRating.NONE;
         this.status = PaymentStatus.WAITING;
     }
     
     public Invoice(int id, Account buyer, Renter renter){
         super(id);
-        this.time = Calendar.getInstance();       
+        this.time = new Timestamp(System.currentTimeMillis());       
     }
     
     public String toString(){
         return "id: " + this.id + " Time: " + this.time + " buyerID: "+ this.buyerId + " renterId: " + this.renterId;
     }
 }
-//masih kurang paham di sini
