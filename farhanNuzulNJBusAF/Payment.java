@@ -1,36 +1,45 @@
 package farhanNuzulNJBusAF;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.text.*;
 
-public class Payment extends Invoice{
+public class Payment extends Invoice {
     private int busId;
-    public Calendar departureDate;
-    public String busSeat;
-    
-    public Payment(int id, int buyerId, int renterId, int busId, String busSeat){
-        super (id, buyerId, renterId);
+    private Calendar departureDate;
+    private String busSeat;
+
+    public Payment(int id, int buyerId, int renterId, int busId, String busSeat) {
+        super(id, buyerId, renterId);
         this.busId = busId;
         this.busSeat = busSeat;
+        // Set departureDate to 2 days from now
+        this.departureDate = Calendar.getInstance();
+        this.departureDate.add(Calendar.DAY_OF_MONTH, 2);
     }
-    
-    public Payment(int id, Account buyer, Renter renter, int busId, String busSeat){
-        super (id, buyer, renter);
+
+    public Payment(int id, Account buyer, Renter renter, int busId, String busSeat) {
+        super(id, buyer, renter);
         this.busId = busId;
-        this.busSeat = busSeat;        
+        this.busSeat = busSeat;
+        // Set departureDate to 2 days from now
+        this.departureDate = Calendar.getInstance();
+        this.departureDate.add(Calendar.DAY_OF_MONTH, 2);
     }
-    
-    public String getDepartureInfo(){
-        return "id: " + this.id + " Time: " + this.time + " buyerID: "+ this.buyerId + " renterId: " + this.renterId + " busId: " + this.busId + " departureDate: " + this.departureDate + " busSeat: " + this.busSeat;
+
+    public String getDepartureInfo() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm:ss");
+        String formattedDate = dateFormat.format(departureDate.getTime());
+        return "id: " + this.id + " Time: " + formattedDate + " buyerID: " + this.buyerId
+                + " renterId: " + this.renterId + " busId: " + this.busId + " busSeat: " + this.busSeat;
     }
-    
-    public int getBusId(){
+
+    public int getBusId() {
         return this.busId;
     }
-    
-    public String getTime(){
-        SimpleDateFormat DateFormat = new SimpleDateFormat ("MMMm DD, hh:mm:ss");
-        String curr_date = DateFormat.format(departureDate.getTime());
-        return curr_date;
+
+    public String getTime() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MMMM dd, yyyy HH:mm:ss");
+        String formattedDate = dateFormat.format(departureDate.getTime());
+        return formattedDate;
     }
 }

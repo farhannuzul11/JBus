@@ -34,7 +34,7 @@ public class JBus{
         Calendar schedule2 = Calendar.getInstance();
         schedule2.add(Calendar.DAY_OF_MONTH, 3);
         testBus.addSchedule(schedule2);
-        for(Schedule s: testBus.schedule){
+        for(Schedule s: testBus.schedules){
             testBus.printSchedule(s);
         }
     }
