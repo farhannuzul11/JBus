@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48cef443-39c8-48ce-8517-75199da8a1bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JBus/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Algorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Predicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Bus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/BusType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/City.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Facility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/FileParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Invoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/JBus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Price.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Rating.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Renter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Review.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Schedule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Serializable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Station.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Type.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Validate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarhanNuzulNoufendriBusAF/Voucher.java" beforeDir="false" />
-    </list>
+    <list default="true" id="48cef443-39c8-48ce-8517-75199da8a1bc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,16 +49,5 @@
       <updated>1696519929084</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/farhanNuzulNJBusAF/JBus.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

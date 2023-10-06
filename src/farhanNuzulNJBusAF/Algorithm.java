@@ -68,13 +68,14 @@ public class Algorithm {
     }
 
     public static <T> int count(Iterator<T> iterator, Predicate<T> pred) {
+        int counter = 0;
         while (iterator.hasNext()) {
             T current = iterator.next();
             if (pred.predicate(current)) {
-                return 1;
+                 counter++;
             }
         }
-        return 0;
+        return counter;
     }
 
     //find
