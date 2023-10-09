@@ -4,7 +4,22 @@ import java.sql.Timestamp;
 import java.util.*;
 
 public class JBus {
-    private static int id;
+
+/*    public static void main(String[] args) {
+        Integer[] numbers = {18, 10, 22, 43, 18, 67, 12, 11, 88, 22, 18};
+        System.out.println("Number "+Arrays.toString(numbers));
+
+        // Tes Algorithm
+        System.out.print("1. ");
+        testCount(numbers);
+        System.out.print("2. ");
+        testFind(numbers);
+        System.out.print("3. ");
+        testExist(numbers);
+        System.out.println("4. Filtering");
+        testCollect(numbers);
+    }*/
+ /*   private static int id;
 
 
     public Bus createBus() {
@@ -66,7 +81,7 @@ public class JBus {
 
 
 
-    }
+    }*/
 }
 
 

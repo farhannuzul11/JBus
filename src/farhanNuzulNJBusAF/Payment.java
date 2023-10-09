@@ -2,6 +2,7 @@ package farhanNuzulNJBusAF;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 public class Payment extends Invoice {
     private int busId;
@@ -22,7 +23,7 @@ public class Payment extends Invoice {
         this.departureDate = new Timestamp(System.currentTimeMillis());
     }
     
-    public static boolean isAvailable(Timestamp departureSchedule, String seat, Bus bus) {
+   /* public static boolean isAvailable(Timestamp departureSchedule, String seat, Bus bus) {
         for (Schedule schedule : bus.schedules) {
             if (schedule.departureSchedule.equals(departureSchedule) && schedule.seatAvailability.containsKey(seat)) {
                 Boolean isSeatAvailable = schedule.seatAvailability.get(seat);
@@ -30,20 +31,38 @@ public class Payment extends Invoice {
             }
         }
         return false; 
-    }
-    
-    public static boolean makeBooking(Timestamp departureSchedule, String seat, Bus bus) {
-    for (Schedule schedule : bus.schedules) {
-        if (schedule.departureSchedule.equals(departureSchedule)) {
-            if (schedule.isSeatAvailable(seat)) {
-                schedule.bookSeat(seat);
-                return true; 
-            } else {
-                return false; 
+    } */
+
+    public static boolean makeBooking(Timestamp departureSchedule, List<String> seat, Bus bus){
+        if(availableSchedule(departureSchedule, seat, bus) != null){
+            for(Schedule s: bus.schedules){
+                if(s.departureSchedule.equals(departureSchedule)){
+                    s.bookSeat(seat);
+                    return true;
+                }
             }
         }
+        return false;
     }
-    return false; 
+
+
+
+    public static Schedule availableSchedule(Timestamp departureSchedule, String seat, Bus bus) {
+        for (Schedule schedule : bus.schedules) {
+            if (schedule.departureSchedule.equals(departureSchedule)) {
+                return schedule;
+            }
+        }
+        return null;
+    }
+
+    public static Schedule availableSchedule(Timestamp departureSchedule, List <String> seat, Bus bus) {
+        for (Schedule schedule : bus.schedules) {
+            if (schedule.departureSchedule.equals(departureSchedule)) {
+                return schedule;
+            }
+        }
+        return null;
     }
 
     public String getDepartureInfo() {

@@ -6,8 +6,36 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Algorithm {
+    public static <T> List<T> paginate (T[] array, int List, int pageSize, Predicate<T> pred){
+        final Iterator<T> it = Arrays.stream(array).iterator();
+        return paginate(it, List, pageSize, pred);
+    }
+
+    public static <T> List<T> paginate (Iterable <T> iterable, int List, int pageSize, Predicate<T> pred){
+        final Iterator<T> it = iterable.iterator();
+        return paginate(it, List, pageSize, pred);
+    }
+
+    public static <T> List<T> paginate (Iterator<T> iterator, int List, int pageSize, Predicate<T> pred){
+        List<T> result = new ArrayList<>();
+        int count = 0;
+        int startIndex = List * pageSize;
+        int endIndex = startIndex + pageSize;
+
+        while (count < endIndex && iterator.hasNext()) {
+            T now = iterator.next();
+            if (count >= startIndex && pred.predicate(now)) {
+                result.add(now);
+            }
+            count++;
+        }
+
+        return result;
+    }
+
+
     //count
-    public static <T> boolean exists(T[] array, T value) {
+/*    public static <T> boolean exists(T[] array, T value) {
         final Iterator<T> it = Arrays.stream(array).iterator();
         return exists(it, value);
     }
@@ -150,7 +178,7 @@ public class Algorithm {
             }
         }
         return newList;
-    }
+    }*/
 
 
 }

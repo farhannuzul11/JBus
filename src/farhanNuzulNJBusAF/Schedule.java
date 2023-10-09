@@ -2,6 +2,7 @@ package farhanNuzulNJBusAF;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.List;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 
@@ -27,18 +28,40 @@ public class Schedule {
         }
     }
 
-    public boolean isSeatAvailable(String seat) {
-        return seatAvailability.containsKey(seat) && seatAvailability.get(seat);
+    public boolean isSeatAvailable(List<String> seat) {
+        boolean allSeatsAvailable = true;
+        for (String seats : seat) {
+            if (!seatAvailability.containsKey(seats) || !seatAvailability.get(seats)) {
+                allSeatsAvailable = false;
+                break;
+            }
+        }
+        return allSeatsAvailable;
     }
 
-    public void bookSeat(String seat) {
-        if (isSeatAvailable(seat)) {
-            seatAvailability.put(seat, false);
-            System.out.println("Kursi " + seat + " terbooking.");
+
+
+    public void bookSeat(List<String> seats) {
+        boolean allSeatsAvailable = isSeatAvailable(seats);
+        if (allSeatsAvailable) {
+            for (String seat : seats) {
+                seatAvailability.put(seat, false);
+                System.out.println("Kursi " + seat + " terbooking.");
+            }
         } else {
-            System.out.println("Kursi " + seat + " tidak tersedia.");
+            System.out.println("Beberapa kursi tidak tersedia.");
         }
     }
+
+    public String toString() {
+        int totalSeats = seatAvailability.size();
+        int occupiedSeats = totalSeats - (int) seatAvailability.values().stream().filter(Boolean::booleanValue).count();
+
+        return "Tanggal keberangkatan: " + departureSchedule +
+                "\nJumlah kursi terisi: " + occupiedSeats +
+                "\nTotal kursi: " + totalSeats;
+    }
+
 
     public void printSchedule() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMMM d, yyyy HH:mm:ss");
