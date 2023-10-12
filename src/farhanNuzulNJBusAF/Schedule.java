@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.List;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
 public class Schedule {
     public Timestamp departureSchedule;
@@ -28,10 +29,14 @@ public class Schedule {
         }
     }
 
-    public boolean isSeatAvailable(List<String> seat) {
+    public boolean isSeatAvailable(String seat) {
+        return seatAvailability.containsKey(seat) && seatAvailability.get(seat);
+    }
+
+    public boolean isSeatAvailable(List<String> seats) {
         boolean allSeatsAvailable = true;
-        for (String seats : seat) {
-            if (!seatAvailability.containsKey(seats) || !seatAvailability.get(seats)) {
+        for (String seat : seats) {
+            if (!seatAvailability.containsKey(seat) || !seatAvailability.get(seat)) {
                 allSeatsAvailable = false;
                 break;
             }
@@ -41,25 +46,31 @@ public class Schedule {
 
 
 
-    public void bookSeat(List<String> seats) {
-        boolean allSeatsAvailable = isSeatAvailable(seats);
-        if (allSeatsAvailable) {
-            for (String seat : seats) {
-                seatAvailability.put(seat, false);
-                System.out.println("Kursi " + seat + " terbooking.");
-            }
+    public void bookSeat(String seat) {
+        if (isSeatAvailable(seat)) {
+            seatAvailability.put(seat, false);
+            System.out.println("Kursi " + seat + " terbooking.");
         } else {
-            System.out.println("Beberapa kursi tidak tersedia.");
+            System.out.println("Kursi " + seat + " tidak tersedia.");
+        }
+    }
+
+    public void bookSeat(List<String> seats) {
+        for (String seat : seats) {
+            bookSeat(seat);
         }
     }
 
     public String toString() {
-        int totalSeats = seatAvailability.size();
-        int occupiedSeats = totalSeats - (int) seatAvailability.values().stream().filter(Boolean::booleanValue).count();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S");
+        String formattedDepartureSchedule = dateFormat.format(this.departureSchedule.getTime());
 
-        return "Tanggal keberangkatan: " + departureSchedule +
-                "\nJumlah kursi terisi: " + occupiedSeats +
-                "\nTotal kursi: " + totalSeats;
+        Predicate<Boolean> isOccupied = occupied -> !occupied;
+        List<Boolean> occupiedSeatsList = new ArrayList<>(seatAvailability.values());
+        List<Boolean> occupiedSeats = Algorithm.paginate(occupiedSeatsList, 0, seatAvailability.size(), isOccupied);
+
+        int occupiedSeatsCount = occupiedSeats.size();
+        return "Schedule : " + formattedDepartureSchedule + "\nOccupied : " + occupiedSeatsCount + "/" + seatAvailability.size();
     }
 
 

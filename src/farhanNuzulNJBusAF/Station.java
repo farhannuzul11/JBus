@@ -5,8 +5,7 @@ public class Station extends Serializable{
     public String stationName;
     public String address;
     
-    public Station(int id, String stationName, City city, String address){
-        super(id);
+    public Station(String stationName, City city, String address){
         this.stationName = stationName;
         this.city = city;
         this.address = address;

@@ -5,25 +5,21 @@ public class Renter extends Serializable{
     public String address;
     public int phoneNumber;
     
-    public Renter(int id, String companyName){
-        super (id);
+    public Renter(String companyName){
         this.companyName = companyName;
     }
     
-    public Renter(int id, String companyName, String address){
-        super (id);
+    public Renter(String companyName, String address){
         this.companyName = companyName;
         this.address = ""; //cek lagi
     }
     
-    public Renter(int id, String companyName, int phoneNumber){
-        super (id);
+    public Renter(String companyName, int phoneNumber){
         this.companyName = companyName;
         this.phoneNumber = 0;
     }
     
-    public Renter(int id, String companyName, int phoneNumber, String address){
-        super (id);
+    public Renter(String companyName, int phoneNumber, String address){
         this.companyName = companyName;
         this.phoneNumber = 0;
         this.address = "";

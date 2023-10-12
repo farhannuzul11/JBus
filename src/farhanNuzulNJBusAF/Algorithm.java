@@ -6,6 +6,10 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Algorithm {
+
+    private Algorithm(){
+
+    }
     public static <T> List<T> paginate (T[] array, int List, int pageSize, Predicate<T> pred){
         final Iterator<T> it = Arrays.stream(array).iterator();
         return paginate(it, List, pageSize, pred);

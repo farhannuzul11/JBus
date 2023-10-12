@@ -17,8 +17,7 @@ public class Invoice extends Serializable{
         FAILED, WAITING, SUCCESS
     }
        
-    public Invoice(int id, int buyerId, int renterId){
-        super(id);
+    public Invoice(int buyerId, int renterId){
         this.buyerId = buyerId;
         this.renterId = renterId;
         this.time = new Timestamp(System.currentTimeMillis());
@@ -26,8 +25,7 @@ public class Invoice extends Serializable{
         this.status = PaymentStatus.WAITING;
     }
     
-    public Invoice(int id, Account buyer, Renter renter){
-        super(id);
+    public Invoice(Account buyer, Renter renter){
         this.time = new Timestamp(System.currentTimeMillis());       
     }
     

@@ -1,30 +1,20 @@
 package farhanNuzulNJBusAF;
 
 import java.util.HashMap;
-
+//masih banyak yang salah
 public class Serializable {
     private static HashMap<Class<?>, Integer> mapCounter = new HashMap<>();
     public int id;
 
-    protected Serializable(int id) {
-        Class<?> currClass = this.getClass();
-        if (id >= 0) {
-            this.id = id;
-            mapCounter.put(currClass, id);
-            id++;
-        } else{
+    public Serializable() {
+        Class<?> currClass = this.getClass(); //Class<?> currClass p this,getClass() //masih belum paham <?>
+        if (mapCounter.containsKey(currClass)) {
+            this.id = mapCounter.get(currClass);
+            mapCounter.put(currClass, this.id + 1);
+        } else {
             this.id = 0;
-            mapCounter.put(currClass, id);
-            id++;
+            mapCounter.put(currClass, this.id + 1);
         }
-//        Class<?> currClass = this.getClass();
-//        if (mapCounter.containsKey(currClass)) {
-//            this.id = mapCounter.get(currClass);
-//            mapCounter.put(currClass, id + 1);
-//        } else {
-//            this.id = 0;
-//            mapCounter.put(currClass, id);
-//        }
     }
 
     public int setLastAssignedId(Class<?> currClass, int newId) {

@@ -9,15 +9,15 @@ public class Payment extends Invoice {
     public Timestamp departureDate;
     public String busSeat;
 
-    public Payment(int id, int buyerId, int renterId, int busId, String busSeat, Timestamp departureDate) {
-        super(id, buyerId, renterId);
+    public Payment(int buyerId, int renterId, int busId, String busSeat, Timestamp departureDate) {
+        super(buyerId, renterId);
         this.busId = busId;
         this.busSeat = busSeat;
         this.departureDate = new Timestamp(System.currentTimeMillis());
     }
 
-    public Payment(int id, Account buyer, Renter renter, int busId, String busSeat, Timestamp departureDate) {
-        super(id, buyer, renter);
+    public Payment(Account buyer, Renter renter, int busId, String busSeat, Timestamp departureDate) {
+        super(buyer, renter);
         this.busId = busId;
         this.busSeat = busSeat;
         this.departureDate = new Timestamp(System.currentTimeMillis());
@@ -34,6 +34,19 @@ public class Payment extends Invoice {
     } */
 
     public static boolean makeBooking(Timestamp departureSchedule, List<String> seat, Bus bus){
+        if(availableSchedule(departureSchedule, seat, bus) != null){
+            for(Schedule s: bus.schedules){
+                if(s.departureSchedule.equals(departureSchedule)){
+                    s.bookSeat(seat);
+                    s.bookSeat(seat);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean makeBooking(Timestamp departureSchedule, String seat, Bus bus){
         if(availableSchedule(departureSchedule, seat, bus) != null){
             for(Schedule s: bus.schedules){
                 if(s.departureSchedule.equals(departureSchedule)){
