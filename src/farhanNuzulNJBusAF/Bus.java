@@ -29,7 +29,7 @@ public class Bus extends Serializable{
     }
     
     public String toString() {
-        return "id: " + this.id + " name: " + this.name + " facility: " + this.facility + " price: " + this.price + " capacity: " + this.capacity + " busType: " + this.busType + " city: " + this.city + " departure: " + this.departure + " arrival: " + this.arrival;
+        return "id: " + this.id + " name: " + this.name + " facility: " + this.facility + " price: " + this.price + " capacity: " + this.capacity + " busType: " + this.busType + " city: " + this.city + " departure: " + this.departure + " arrival: " + this.arrival + "\n";
     }
 
 //    @Override
@@ -50,13 +50,13 @@ public class Bus extends Serializable{
         try {
             for (Schedule existingSchedule : schedules) {
                 if (existingSchedule.departureSchedule.equals(schedule)) {
-                    System.out.println("Terdapat jadwal dengan waktu yang sama.");
+                    System.out.println("Ada jadwal dengan waktu yang sama");
                     return;
                 }
             }
             schedules.add(new Schedule(schedule, this.capacity));
         } catch (Exception e) {
-            System.out.println("Terjadi kesalahan saat menambahkan jadwal: " + e.getMessage());
+            System.out.println("Kesalahan saat menambahkan jadwal: " + e.getMessage());
         }
     }
 

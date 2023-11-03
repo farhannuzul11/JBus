@@ -4,14 +4,51 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
+import java.util.ArrayList;
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 
 public class JBus {
-    public static List<Bus> filterByDeparture(List<Bus> buses,City departure, int page, int padeSize){
+    public static List<Bus> filterByDeparture(List<Bus> buses,City departure, int page, int pageSize){
+        Predicate<Bus> cityExist = (bus) -> bus.city.equals(departure);
+        return Algorithm.paginate(buses, page, pageSize, cityExist);
+    }
+
+    public static List<Bus> filterByPrice(List<Bus> buses, int min, int max){
+        List<Bus> filteredBuses = new ArrayList<>();
+        for (Bus bus : buses){
+            if (bus.price.price >= min && bus.price.price <= max){
+                filteredBuses.add(bus);
+            }
+        }
+        return filteredBuses;
+    }
+
+    public static Bus filterBusId(List<Bus> buses, int id){
+        for (Bus bus : buses){
+            if (bus.id == id){
+                return bus;
+            }
+        }
+        return null;
+    }
+
+    public static List<Bus> filteredByDepartureAndArrival (List<Bus> buses, City departure, City arrival, int page, int pageSize){
+        List<Bus> filteredBuses = new ArrayList<>();
+        for (Bus bus : buses){
+            if (bus.departure.city == departure &&  bus.arrival.city == arrival) {
+                filteredBuses.add(bus);
+            }
+        }
+        return Algorithm.paginate(filteredBuses, page, pageSize, t -> true);
+    }
+
+
+
+    public static void main(String[] args) {
         try {
             String filepath =
-                    "C:\\Users\\Rafie\\netlabJBus\\JBus\\data\\buses.json";
+                    "C:\\Users\\asus\\OneDrive\\Dokumen\\Semester 3\\OOP\\OOP 01\\JBus\\data\\buses.json";
             JsonTable<Bus> busList = new JsonTable<>(Bus.class,filepath);
             List<Bus> filteredBus =
                     filterByDeparture(busList,City.JAKARTA,1,10);
@@ -20,13 +57,12 @@ public class JBus {
         catch (Throwable t) {
             t.printStackTrace();
         }
-        return buses;
     }
+}
 
 
-    public static void main(String[] args) {
 
-        //TP Modul 6
+//TP Modul 6
 
 //        String filepath = "C:\\Users\\asus\\OneDrive\\Dokumen\\Semester 3\\OOP\\OOP 01\\JBus\\data\\station.json";
 //        Gson gson = new Gson();
@@ -41,8 +77,8 @@ public class JBus {
 //        catch (IOException e){
 //            e.printStackTrace();
 //        }
-    }
-}
+
+
 //
 //import java.sql.Timestamp;
 //import java.util.*;

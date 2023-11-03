@@ -1,9 +1,17 @@
 package farhanNuzulNJBusAF;
 
+import java.util.regex.Pattern;
+
 public class Renter extends Serializable{
     public String companyName;
     public String address;
     public int phoneNumber;
+
+    private final String REGEX_NAME = "[A-Z][A-Za-z0-9_]{3,19}$";
+
+    private final String REGEX_PHONE = "^[0-9]{9,12}$";
+
+
     
     public Renter(String companyName){
         this.companyName = companyName;
@@ -25,4 +33,15 @@ public class Renter extends Serializable{
         this.address = "";
     }
 
+    public boolean validate(){
+        if(!Pattern.matches(REGEX_NAME, companyName)){
+            return false;
+        }
+
+        String phoneNumber_S = String.valueOf(phoneNumber);
+        if (!Pattern.matches(REGEX_PHONE, phoneNumber_S)){
+            return false;
+        }
+        return true;
+    }
 }
