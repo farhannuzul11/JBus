@@ -8,23 +8,39 @@ import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 
 public class JBus {
+    public static List<Bus> filterByDeparture(List<Bus> buses,City departure, int page, int padeSize){
+        try {
+            String filepath =
+                    "C:\\Users\\Rafie\\netlabJBus\\JBus\\data\\buses.json";
+            JsonTable<Bus> busList = new JsonTable<>(Bus.class,filepath);
+            List<Bus> filteredBus =
+                    filterByDeparture(busList,City.JAKARTA,1,10);
+            filteredBus.forEach(bus -> System.out.println(bus.toString()));
+        }
+        catch (Throwable t) {
+            t.printStackTrace();
+        }
+        return buses;
+    }
+
+
     public static void main(String[] args) {
 
         //TP Modul 6
 
-        String filepath = "C:\\Users\\asus\\OneDrive\\Dokumen\\Semester 3\\OOP\\OOP 01\\JBus\\data\\station.json";
-        Gson gson = new Gson();
-
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath));
-            List<Station> stationjson = gson.fromJson(bufferedReader, new TypeToken<List<Station>>() {}.getType());
-            stationjson.forEach(e -> System.out.println(e.toString()));
-            System.out.println();
-            bufferedReader.close();
-        }
-        catch (IOException e){
-            e.printStackTrace();
-        }
+//        String filepath = "C:\\Users\\asus\\OneDrive\\Dokumen\\Semester 3\\OOP\\OOP 01\\JBus\\data\\station.json";
+//        Gson gson = new Gson();
+//
+//        try {
+//            BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath));
+//            List<Station> stationjson = gson.fromJson(bufferedReader, new TypeToken<List<Station>>() {}.getType());
+//            stationjson.forEach(e -> System.out.println(e.toString()));
+//            System.out.println();
+//            bufferedReader.close();
+//        }
+//        catch (IOException e){
+//            e.printStackTrace();
+//        }
     }
 }
 //

@@ -1,6 +1,6 @@
 package farhanNuzulNJBusAF;
 
-public class Voucher extends Serializable implements FileParser{
+public class Voucher extends Serializable {
     public String name;
     private boolean used;
     public double minimum;
@@ -39,13 +39,13 @@ public class Voucher extends Serializable implements FileParser{
             return price.price - cut;
     }
     
-    @Override
-    public Object write(){
-        return this;
-    }
-    
-    @Override
-    public boolean read (String component){
-        return true;
-    }
+//    @Override
+//    public Object write(){
+//        return this;
+//    }
+//
+//    @Override
+//    public boolean read (String component){
+//        return true;
+//    }
 }
