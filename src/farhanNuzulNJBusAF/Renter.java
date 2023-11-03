@@ -34,14 +34,10 @@ public class Renter extends Serializable{
     }
 
     public boolean validate(){
-        if(!Pattern.matches(REGEX_NAME, companyName)){
-            return false;
-        }
-
         String phoneNumber_S = String.valueOf(phoneNumber);
-        if (!Pattern.matches(REGEX_PHONE, phoneNumber_S)){
-            return false;
+        if(Pattern.matches(REGEX_NAME, companyName) && Pattern.matches(REGEX_PHONE, phoneNumber_S)){
+            return true;
         }
-        return true;
+        return false;
     }
 }
