@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48cef443-39c8-48ce-8517-75199da8a1bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/BookingThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JsonTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JsonTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Renter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Renter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Serializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Serializable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
