@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class Renter extends Serializable{
     public String companyName;
     public String address;
-    public int phoneNumber;
+    public String phoneNumber;
 
     private final String REGEX_NAME = "[A-Z][A-Za-z0-9_]{3,19}$";
 
@@ -17,20 +17,20 @@ public class Renter extends Serializable{
         this.companyName = companyName;
     }
     
-    public Renter(String companyName, String address){
+//    public Renter(String companyName, String address){
+//        this.companyName = companyName;
+//        this.address = ""; //cek lagi
+//    }
+    
+    public Renter(String companyName, String phoneNumber){
         this.companyName = companyName;
-        this.address = ""; //cek lagi
+        this.phoneNumber = phoneNumber;
     }
     
-    public Renter(String companyName, int phoneNumber){
+    public Renter(String companyName, String phoneNumber, String address){
         this.companyName = companyName;
-        this.phoneNumber = 0;
-    }
-    
-    public Renter(String companyName, int phoneNumber, String address){
-        this.companyName = companyName;
-        this.phoneNumber = 0;
-        this.address = "";
+        this.phoneNumber = phoneNumber;
+        this.address = address;
     }
 
     public boolean validate(){
