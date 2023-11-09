@@ -4,76 +4,94 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48cef443-39c8-48ce-8517-75199da8a1bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/accountDatabase.json" afterDir="false" />
+    <list default="true" id="0b13fc59-7f06-4822-a667-fdb6d7f9f44b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/BookingThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/BookingThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JBus.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JBus/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JBus/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accountDatabase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/accountDatabase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/buses.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/station.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gson-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Algorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/BookingThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Bus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/BusType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Facility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Invoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JBus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/JsonTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Predicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Price.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Rating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Renter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Serializable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Station.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Validate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/farhanNuzulNJBusAF/Voucher.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2WLlpvi9ez5A4gxz4hbXpp3sY3g" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2XwLYlekOKBqpEHk5ezbXIyJbG5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asus/OneDrive/Dokumen/Semester 3/OOP/OOP 01/JBus&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="JBus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="farhanNuzulNJBusAF.JBus" />
-      <module name="JBus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="farhanNuzulNJBusAF.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.JBus" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="48cef443-39c8-48ce-8517-75199da8a1bc" name="Changes" comment="" />
-      <created>1696519929084</created>
+      <changelist id="0b13fc59-7f06-4822-a667-fdb6d7f9f44b" name="Changes" comment="" />
+      <created>1699535245570</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696519929084</updated>
+      <updated>1699535245570</updated>
     </task>
     <servers />
   </component>
