@@ -12,10 +12,18 @@ public class BookingThread extends Thread{
         this.start();
     }
     public void run() {
+        System.out.println("Thread " + Thread.currentThread().getId() + " ID: " + Thread.currentThread().getName() + " is running");
         synchronized (bus) {
-            System.out.println("Thread " + Thread.currentThread().getId() + " ID: " + Thread.currentThread().getName() + " is running"
-            );
-            Payment.makeBooking(this.timestamp, "ER01", this.bus);
+                String seatToBook = "AF01";
+                boolean booked = Payment.makeBooking(timestamp, seatToBook, bus);
+                if (booked) {
+                    System.out.println("Thread ID: " + getId() + " Thread Name: " + getName() + " booked seat: " + seatToBook);
+                } else {
+                    System.out.println("Thread ID: " + getId() + " Thread Name: " + getName() + " failed to book seat: " + seatToBook);
+                }
+//            System.out.println("Thread " + Thread.currentThread().getId() + " ID: " + Thread.currentThread().getName() + " is running"
+//            );
+//            Payment.makeBooking(this.timestamp, "AF01", this.bus);
         }
     }
 }

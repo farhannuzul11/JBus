@@ -23,6 +23,25 @@ public class JBus {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        try{
+            String filepath = "C:\\Users\\asus\\OneDrive\\Dokumen\\Semester 3\\OOP\\OOP 01\\JBus\\data\\accountDatabase.json";
+            Gson gson = new Gson();
+            JsonTable<Account> AccountTable = new JsonTable<>(Account.class, filepath);
+
+
+            Account newAccount1 = new Account("Dio", "dio@gmail.com", "NgikNgok");
+            AccountTable.add(newAccount1);
+            AccountTable.writeJson();
+
+            for (Account tes : AccountTable) {
+                System.out.println(tes.toString());
+            }
+        } catch (IOException t) {
+            t.printStackTrace();
+        }
+
+
     }
 
     public static Bus createBus() {
@@ -30,11 +49,10 @@ public class JBus {
         Bus bus = new Bus("Netlab Bus", Facility.LUNCH, price, 25,
                 BusType.REGULER, City.BANDUNG, new Station("Depok Terminal", City.DEPOK,
                 "Jl. Margonda Raya"), new Station("Halte UI", City.JAKARTA, "Universitas Indonesia"));
-                Timestamp timestamp = Timestamp.valueOf("2023-07-27 19:00:00");
+        Timestamp timestamp = Timestamp.valueOf("2023-07-27 19:00:00");
         bus.addSchedule(timestamp);
         return bus;
     }
-
 }
 
 

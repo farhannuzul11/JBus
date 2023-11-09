@@ -34,16 +34,24 @@ public class Payment extends Invoice {
     } */
 
     public static boolean makeBooking(Timestamp departureSchedule, List<String> seat, Bus bus){
-        if(availableSchedule(departureSchedule, seat, bus) != null){
-            for(Schedule s: bus.schedules){
-                if(s.departureSchedule.equals(departureSchedule)){
-                    s.bookSeat(seat);
-                    s.bookSeat(seat);
-                    return true;
+            boolean allBooked = true;
+            for (String s : seat){
+                boolean booked = makeBooking(departureSchedule, s, bus);
+                if (!booked){
+                    allBooked = false;
                 }
             }
-        }
-        return false;
+            return allBooked;
+//        if(availableSchedule(departureSchedule, seat, bus) != null){
+//            for(Schedule s: bus.schedules){
+//                if(s.departureSchedule.equals(departureSchedule)){
+//                    s.bookSeat(seat);
+//                    s.bookSeat(seat);
+//                    return true;
+//                }
+//            }
+//        }
+//        return false;
     }
 
     public static boolean makeBooking(Timestamp departureSchedule, String seat, Bus bus){
