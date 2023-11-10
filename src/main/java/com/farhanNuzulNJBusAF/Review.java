@@ -1,7 +1,9 @@
 package com.farhanNuzulNJBusAF;
 
 
-public class Review extends Serializable{
+import com.farhanNuzulNJBusAF.dbjson.Serializable;
+
+public class Review extends Serializable {
     public String date;
     public String desc;
     

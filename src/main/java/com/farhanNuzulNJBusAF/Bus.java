@@ -1,11 +1,12 @@
 package com.farhanNuzulNJBusAF;
 
+import com.farhanNuzulNJBusAF.dbjson.Serializable;
+
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 import java.sql.Timestamp;
 
-public class Bus extends Serializable{
+public class Bus extends Serializable {
     public String name;
     public Facility facility;
     public Price price;

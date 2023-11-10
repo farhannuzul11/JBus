@@ -1,6 +1,8 @@
 package com.farhanNuzulNJBusAF;
 
-public class Station extends Serializable{
+import com.farhanNuzulNJBusAF.dbjson.Serializable;
+
+public class Station extends Serializable {
     public City city;
     public String stationName;
     public String address;

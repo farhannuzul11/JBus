@@ -1,8 +1,10 @@
 package com.farhanNuzulNJBusAF;
 
+import com.farhanNuzulNJBusAF.dbjson.Serializable;
+
 import java.sql.Timestamp;
 
-public class Invoice extends Serializable{
+public class Invoice extends Serializable {
     public Timestamp time;
     public BusRating rating;
     public int buyerId;

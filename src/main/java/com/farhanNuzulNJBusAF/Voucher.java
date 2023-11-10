@@ -1,5 +1,7 @@
 package com.farhanNuzulNJBusAF;
 
+import com.farhanNuzulNJBusAF.dbjson.Serializable;
+
 public class Voucher extends Serializable {
     public String name;
     private boolean used;

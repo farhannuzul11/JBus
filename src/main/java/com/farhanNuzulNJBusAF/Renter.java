@@ -1,8 +1,10 @@
 package com.farhanNuzulNJBusAF;
 
+import com.farhanNuzulNJBusAF.dbjson.Serializable;
+
 import java.util.regex.Pattern;
 
-public class Renter extends Serializable{
+public class Renter extends Serializable {
     public String companyName;
     public String address;
     public String phoneNumber;

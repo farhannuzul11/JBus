@@ -1,4 +1,4 @@
-package com.farhanNuzulNJBusAF;
+package com.farhanNuzulNJBusAF.dbjson;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
