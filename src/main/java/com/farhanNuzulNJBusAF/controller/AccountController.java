@@ -2,6 +2,7 @@ package com.farhanNuzulNJBusAF.controller;
 
 import com.farhanNuzulNJBusAF.Account;
 import com.farhanNuzulNJBusAF.Algorithm;
+import com.farhanNuzulNJBusAF.Predicate;
 import com.farhanNuzulNJBusAF.Renter;
 import com.farhanNuzulNJBusAF.dbjson.JsonAutowired;
 import com.farhanNuzulNJBusAF.dbjson.Serializable;
@@ -10,7 +11,8 @@ import com.fasterxml.jackson.databind.ser.Serializers;
 import org.springframework.web.bind.annotation.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 @RestController
@@ -26,33 +28,42 @@ public class AccountController implements BasicGetController<Account> {
             @RequestParam String email,
             @RequestParam String password
     ){
-        Account acc = new Account(name, email, password);
-        if (name.isBlank()){
-            return new BaseResponse<>(false, "Gagal register", null);
-        }
-        if (!acc.validate()) {
-            return new BaseResponse<>(false, "Gagal register", null);
-        }
-        if (Algorithm.exists(getJsonTable(), acc)) {
-            return new BaseResponse<>(false, "Gagal register: Email sudah terdaftar", null);
-        }
+        Predicate<Account> s = (val) -> val.email.equals(email);
 
-        String passwordToHash = password;
-        String generatedPassword = null;
-        try{
-        MessageDigest md = MessageDigest.getInstance("MD5");
-        md.update(passwordToHash.getBytes());
-        byte[] bytes = md.digest();
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < bytes.length; i++){
-            sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+        String REGEX_PASSWORD = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$";
+        String REGEX_EMAIL = "^[a-zA-Z0-9]+@[a-zA-Z_]+?\\.[a-zA-Z.]+[a-zA-Z]+$";
+        Pattern patternPassword = Pattern.compile(REGEX_PASSWORD);
+        Pattern patternEmail = Pattern.compile(REGEX_EMAIL);
+        Matcher matcherPassword = patternPassword.matcher(password);
+        Matcher matcherEmail = patternEmail.matcher(email);
+
+        if (name.isBlank() == false && matcherPassword.find() && matcherEmail.find() && Algorithm.exists(accountTable,s) == false) {
+            String passwordToHash = password;
+            String generatedPassword = null;
+
+            try
+            {
+                MessageDigest md = MessageDigest.getInstance("MD5");
+
+                md.update(passwordToHash.getBytes());
+
+                byte[] bytes = md.digest();
+
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0;i < bytes.length;i++) {
+                    sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+                }
+                generatedPassword = sb.toString();
+            }
+            catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
+            Account tmp =  new Account(name, email, generatedPassword);
+            accountTable.addElement(tmp);
+            return new BaseResponse<>(true, "Berhasil register", tmp);
         }
-        generatedPassword = sb.toString();
-        } catch (NoSuchAlgorithmException e){
-            e.printStackTrace();
-        }
-        Account new_acc = new Account(name, email, password);
-        return new BaseResponse<>(true, "Berhasil register", new_acc);
+        return new BaseResponse<>(false, "Gagal register", null);
+
     }
     @PostMapping("/login")
     protected BaseResponse<Account> login(

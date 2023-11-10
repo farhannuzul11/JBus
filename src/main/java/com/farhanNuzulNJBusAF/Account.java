@@ -11,8 +11,8 @@ public class Account extends Serializable {
     public String password;
     public Renter company;
     public double balance;
-    public static final String REGEX_EMAIL = "^[a-zA-Z0-9]+@[a-zA-Z_]+?\\.[a-zA-Z.]+[a-zA-Z]+$";
-    public static final String REGEX_PW = "^( =.*[a-z])( =.*[A-Z])( =.*\\d)[a-zA-Z\\d]{8,}$";
+    public static final String REGEX_PASSWORD = "^(?=.[a-z])(?=.[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$";
+    public static final String REGEX_EMAIL = "^[a-zA-Z0-9]+@[a-zA-Z]+?\\.[a-zA-Z.]+[a-zA-Z]+$";
  
     public Account(String name, String email, String password){
         this.name = name;
@@ -27,7 +27,7 @@ public class Account extends Serializable {
     }
 
     public boolean validate(){
-        if(Pattern.matches(REGEX_EMAIL, email) && Pattern.matches(REGEX_PW, password)){
+        if(Pattern.matches(REGEX_EMAIL, email) && Pattern.matches(REGEX_PASSWORD, password)){
             return true;
         } return false;
     }
