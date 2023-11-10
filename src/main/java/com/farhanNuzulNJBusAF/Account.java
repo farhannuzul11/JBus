@@ -11,8 +11,8 @@ public class Account extends Serializable {
     public String password;
     public Renter company;
     public double balance;
-    public static final String REGEX_EMAIL = "^[a-zA-Z0-9]+@[a-zA-Z]+\\.[a-zA-Z]{2,}$";
-    public static final String REGEX_PW = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\\\d)[a-zA-Z\\\\d]{8,}$";
+    public static final String REGEX_EMAIL = "^[a-zA-Z0-9]+@[a-zA-Z_]+?\\.[a-zA-Z.]+[a-zA-Z]+$";
+    public static final String REGEX_PW = "^( =.*[a-z])( =.*[A-Z])( =.*\\d)[a-zA-Z\\d]{8,}$";
  
     public Account(String name, String email, String password){
         this.name = name;
@@ -30,6 +30,17 @@ public class Account extends Serializable {
         if(Pattern.matches(REGEX_EMAIL, email) && Pattern.matches(REGEX_PW, password)){
             return true;
         } return false;
+    }
+
+    public boolean topUp(double amount) {
+        if (amount > 0) {
+            this.balance += amount;
+            System.out.println("Top-up successful. New balance: " + this.balance);
+            return true;
+        } else {
+            System.out.println("Invalid top-up amount. Please provide a positive value.");
+            return false;
+        }
     }
 //    @Override
 //    public Object write(){

@@ -1,5 +1,6 @@
 package com.farhanNuzulNJBusAF;
 
+import com.farhanNuzulNJBusAF.dbjson.JsonDBEngine;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.io.BufferedReader;
@@ -11,11 +12,22 @@ import java.util.ArrayList;
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 
-
 @SpringBootApplication
-public class JBus {
-    public static void main(String[] args) throws  InterruptedException{
+public class JBus{
+    public static void main (String[] args){
+        JsonDBEngine.Run(JBus.class);
         SpringApplication.run(JBus.class, args);
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> JsonDBEngine.join()));
+    }
+}
+
+
+//@SpringBootApplication
+//public class JBus {
+//    public static void main(String[] args) throws  InterruptedException{
+//        SpringApplication.run(JBus.class, args);
+
+
 //        try {
 //            Bus bus = createBus();
 //            bus.schedules.forEach(Schedule::printSchedule);
@@ -57,8 +69,8 @@ public class JBus {
 //        Timestamp timestamp = Timestamp.valueOf("2023-07-27 19:00:00");
 //        bus.addSchedule(timestamp);
 //        return bus;
-    }
-}
+//    }
+//}
 
 
 
