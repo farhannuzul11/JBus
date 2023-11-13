@@ -7,19 +7,19 @@ import java.util.List;
 public class Payment extends Invoice {
     private int busId;
     public Timestamp departureDate;
-    public String busSeat;
+    public List<String> busSeats;
 
-    public Payment(int buyerId, int renterId, int busId, String busSeat, Timestamp departureDate) {
+    public Payment(int buyerId, int renterId, int busId, List<String> busSeats, Timestamp departureDate) {
         super(buyerId, renterId);
         this.busId = busId;
-        this.busSeat = busSeat;
+        this.busSeats = busSeats;
         this.departureDate = new Timestamp(System.currentTimeMillis());
     }
 
-    public Payment(Account buyer, Renter renter, int busId, String busSeat, Timestamp departureDate) {
+    public Payment(Account buyer, Renter renter, int busId, List<String> busSeats, Timestamp departureDate) {
         super(buyer, renter);
         this.busId = busId;
-        this.busSeat = busSeat;
+        this.busSeats = busSeats;
         this.departureDate = new Timestamp(System.currentTimeMillis());
     }
     
@@ -90,7 +90,7 @@ public class Payment extends Invoice {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy HH:mm:ss");
         String formattedDate = dateFormat.format(departureDate.getTime());
         return "id: " + this.id + " Time: " + formattedDate + " buyerID: " + this.buyerId
-                + " renterId: " + this.renterId + " busId: " + this.busId + " busSeat: " + this.busSeat;
+                + " renterId: " + this.renterId + " busId: " + this.busId + " busSeat: " + this.busSeats;
     }
 
     public int getBusId() {

@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b13fc59-7f06-4822-a667-fdb6d7f9f44b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/StationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/station.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,14 +60,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/asus/OneDrive/Dokumen/Semester 3/OOP/OOP 01/JBus/src/main/java/com/farhanNuzulNJBusAF/controller"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\OneDrive\Dokumen\Semester 3\OOP\OOP 01\JBus\src\main\java\com\farhanNuzulNJBusAF\controller" />
+      <recent name="C:\Users\asus\OneDrive\Dokumen\Semester 3\OOP\OOP 01\JBus\src\main\java\com\farhanNuzulNJBusAF\json" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus\OneDrive\Dokumen\Semester 3\OOP\OOP 01\JBus\src\main\java\com\farhanNuzulNJBusAF\controller" />
       <recent name="C:\Users\asus\OneDrive\Dokumen\Semester 3\OOP\OOP 01\JBus\src\main\java\com\farhanNuzulNJBusAF\dbjson" />
@@ -76,5 +88,16 @@
       <updated>1699535245570</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
