@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/bus")
 public class BusController implements BasicGetController<Bus> {
-    public static @JsonAutowired(value = Account.class, filepath = "src\\main\\java\\com\\farhanNuzulNJBusAF\\json\\bus.json") JsonTable<Bus> busTable;
+    public static @JsonAutowired(value = Account.class, filepath = "src\\main\\java\\com\\farhanNuzulNJBusAF\\json\\bus_db.json") JsonTable<Bus> busTable;
 
     public BusController() {}
 

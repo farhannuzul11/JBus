@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b13fc59-7f06-4822-a667-fdb6d7f9f44b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/FarhanNuzulNjBusAfApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BusController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/StationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/account.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/account.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/bus_db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/bus_db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/payment.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/payment.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/station.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/station.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/farhanNuzulNJBusAF/FarhanNuzulNjBusAfApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/farhanNuzulNJBusAF/FarhanNuzulNjBusAfApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,16 +95,5 @@
       <updated>1699535245570</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
