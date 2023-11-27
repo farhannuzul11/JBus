@@ -5,46 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b13fc59-7f06-4822-a667-fdb6d7f9f44b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/farhanNuzulNJBusAFApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/BookingThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/BookingThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/BusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/BusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Facility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/JBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/JBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Payment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Predicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Predicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Price.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Price.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Rating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Renter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Renter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Validate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Voucher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Voucher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BasicGetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BasicGetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/StationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/dbjson/JsonTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/dbjson/JsonTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/dbjson/Serializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/dbjson/Serializable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/account.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/account.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/bus_db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/station.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/station.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/farhanNuzulNJBusAF/FarhanNuzulNjBusAfApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/farhanNuzulNJBusAF/FarhanNuzulNjBusAfApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

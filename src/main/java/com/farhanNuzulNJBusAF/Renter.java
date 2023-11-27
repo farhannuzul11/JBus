@@ -9,9 +9,9 @@ public class Renter extends Serializable {
     public String address;
     public String phoneNumber;
 
-    private final String REGEX_NAME = "[A-Z][A-Za-z0-9_]{3,19}$";
+    private static final String REGEX_NAME = "[A-Z][A-Za-z0-9_]{3,19}$";
 
-    private final String REGEX_PHONE = "^[0-9]{9,12}$";
+    private static final String REGEX_PHONE = "^[0-9]{9,12}$";
 
 
     
@@ -35,11 +35,11 @@ public class Renter extends Serializable {
         this.address = address;
     }
 
-    public boolean validate(){
-        String phoneNumber_S = String.valueOf(phoneNumber);
-        if(Pattern.matches(REGEX_NAME, companyName) && Pattern.matches(REGEX_PHONE, phoneNumber_S)){
-            return true;
-        }
-        return false;
-    }
+//    public boolean validate(){
+//        String phoneNumber_S = String.valueOf(phoneNumber);
+//        if(Pattern.matches(REGEX_NAME, companyName) && Pattern.matches(REGEX_PHONE, phoneNumber_S)){
+//            return true;
+//        }
+//        return false;
+//    }
 }

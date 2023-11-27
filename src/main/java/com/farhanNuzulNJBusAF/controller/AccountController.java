@@ -87,10 +87,10 @@ public class AccountController implements BasicGetController<Account> {
         }
         for (Account t : accountTable){
             if (t.email.equals(email) && t.password.equals(generatedPassword)){
-                return new BaseResponse<>(true, "Berhasil register", t);
+                return new BaseResponse<>(true, "Berhasil login", t);
             }
         }
-        return new BaseResponse<>(false, "Gagal register", null);
+        return new BaseResponse<>(false, "Gagal login", null);
 
     }
 
