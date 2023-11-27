@@ -1,9 +1,6 @@
 package com.farhanNuzulNJBusAF.controller;
 
-import com.farhanNuzulNJBusAF.Account;
-import com.farhanNuzulNJBusAF.Algorithm;
-import com.farhanNuzulNJBusAF.Predicate;
-import com.farhanNuzulNJBusAF.Renter;
+import com.farhanNuzulNJBusAF.*;
 import com.farhanNuzulNJBusAF.dbjson.JsonAutowired;
 import com.farhanNuzulNJBusAF.dbjson.Serializable;
 import com.farhanNuzulNJBusAF.dbjson.JsonTable;
@@ -11,6 +8,7 @@ import com.fasterxml.jackson.databind.ser.Serializers;
 import org.springframework.web.bind.annotation.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -116,4 +114,9 @@ public class AccountController implements BasicGetController<Account> {
         }
         return new BaseResponse<>(false, "Gagal melakukan top up ", null);
     }
+
+//    @GetMapping("bus/getMyBus")
+//    public List<Bus> getMyBus(@RequestParam int accountId) {
+//        return Algorithm.<Bus>collect(getJsonTable(), b->b.accountId==accountId);}
+
 }
