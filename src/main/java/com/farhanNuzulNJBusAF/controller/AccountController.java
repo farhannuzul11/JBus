@@ -28,7 +28,7 @@ public class AccountController implements BasicGetController<Account> {
             @RequestParam String email,
             @RequestParam String password
     ){
-        Predicate<Account> s = (val) -> val.email.equals(email);
+        Predicate<Account> s = (val) -> val.email.equals(email); //Account
 
         String REGEX_PASSWORD = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$";
         String REGEX_EMAIL = "^[a-zA-Z0-9]+@[a-zA-Z_]+?\\.[a-zA-Z.]+[a-zA-Z]+$";
@@ -117,4 +117,3 @@ public class AccountController implements BasicGetController<Account> {
         return new BaseResponse<>(false, "Gagal melakukan top up ", null);
     }
 }
-

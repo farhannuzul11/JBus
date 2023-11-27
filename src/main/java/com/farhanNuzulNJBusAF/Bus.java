@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 
 public class Bus extends Serializable {
     public String name;
-    public List<Facility> facilities;
+    public List<Facility> facility;
     public Price price;
     public int capacity;
     public BusType busType;
@@ -16,21 +16,19 @@ public class Bus extends Serializable {
     public Station arrival;
     public List<Schedule> schedules;
     public int accountId;
-
-    public Bus(String name, List <Facility> facilities, Price price, int capacity, BusType busType, Station departure, Station arrival, int accountId) {
+    public Bus(String name, List<Facility> facility, Price price, int capacity, BusType busType, Station arrival, Station departure, int accountId) {
         this.name = name;
-        this.facilities = facilities;
+        this.facility = facility;
         this.price = price;
         this.capacity = capacity;
         this.busType = busType;
         this.departure = departure;
         this.arrival = arrival;
         this.schedules = new ArrayList<>();
-        this.accountId = accountId;
     }
     
     public String toString() {
-        return "id: " + this.id + " name: " + this.name + " facility: " + this.facilities + " price: " + this.price + " capacity: " + this.capacity + " busType: " + this.busType + " departure: " + this.departure + " arrival: " + this.arrival + "\n";
+        return "id: " + this.id + " name: " + this.name + " facility: " + this.facility + " price: " + this.price + " capacity: " + this.capacity + " busType: " + this.busType + " departure: " + this.departure + " arrival: " + this.arrival + "\n";
     }
 
 //    @Override

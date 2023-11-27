@@ -39,7 +39,7 @@ public class Algorithm {
 
 
 
-  public static <T> boolean exists(T[] array, T value) {
+    public static <T> boolean exists(T[] array, T value) {
         final Iterator<T> it = Arrays.stream(array).iterator();
         return exists(it, value);
     }
@@ -104,7 +104,7 @@ public class Algorithm {
         while (iterator.hasNext()) {
             T current = iterator.next();
             if (pred.predicate(current)) {
-                 counter++;
+                counter++;
             }
         }
         return counter;
