@@ -1,1 +1,140 @@
-[]
+[
+  {
+    "name": "Farhan Nuzul",
+    "facility": [
+      "AC",
+      "COOL_BOX"
+    ],
+    "price": {
+      "price": 30000.0,
+      "rebate": 0.0
+    },
+    "capacity": 20,
+    "busType": "DOUBLE_DECKER",
+    "departure": {
+      "city": "SURABAYA",
+      "stationName": "Terminal Giwangan",
+      "address": "Giwangan, Kec. Umbulharjo, Daerah Istimewa Yogyakarta",
+      "id": 4
+    },
+    "arrival": {
+      "city": "SURABAYA",
+      "stationName": "Terminal Purabaya",
+      "address": "Kasian, Bungurasih, Kabupaten Sidoarjo, Jawa Timur",
+      "id": 3
+    },
+    "schedules": [],
+    "accountId": 1,
+    "id": 1
+  },
+  {
+    "name": "Noufendri",
+    "facility": [
+      "AC",
+      "TOILET"
+    ],
+    "price": {
+      "price": 20000.0,
+      "rebate": 0.0
+    },
+    "capacity": 10,
+    "busType": "REGULER",
+    "departure": {
+      "city": "SURABAYA",
+      "stationName": "Terminal Giwangan",
+      "address": "Giwangan, Kec. Umbulharjo, Daerah Istimewa Yogyakarta",
+      "id": 4
+    },
+    "arrival": {
+      "city": "DEPOK",
+      "stationName": "Terminal Jatijajar",
+      "address": "Jl. Jatijajar 1 No.04, Jatijajar, Kec. Tapos, Jawa Barat",
+      "id": 0
+    },
+    "schedules": [],
+    "accountId": 1,
+    "id": 2
+  },
+  {
+    "name": "Fartur",
+    "facility": [
+      "ELECTRIC_SOCKET"
+    ],
+    "price": {
+      "price": 20.0,
+      "rebate": 0.0
+    },
+    "capacity": 10,
+    "busType": "REGULER",
+    "departure": {
+      "city": "DEPOK",
+      "stationName": "Terminal Jatijajar",
+      "address": "Jl. Jatijajar 1 No.04, Jatijajar, Kec. Tapos, Jawa Barat",
+      "id": 0
+    },
+    "arrival": {
+      "city": "DEPOK",
+      "stationName": "Terminal Jatijajar",
+      "address": "Jl. Jatijajar 1 No.04, Jatijajar, Kec. Tapos, Jawa Barat",
+      "id": 0
+    },
+    "schedules": [],
+    "accountId": 1,
+    "id": 3
+  },
+  {
+    "name": "Nuno",
+    "facility": [
+      "COOL_BOX"
+    ],
+    "price": {
+      "price": 20000.0,
+      "rebate": 0.0
+    },
+    "capacity": 12,
+    "busType": "MINIBUS",
+    "departure": {
+      "city": "DEPOK",
+      "stationName": "Terminal Jatijajar",
+      "address": "Jl. Jatijajar 1 No.04, Jatijajar, Kec. Tapos, Jawa Barat",
+      "id": 0
+    },
+    "arrival": {
+      "city": "SURABAYA",
+      "stationName": "Terminal Giwangan",
+      "address": "Giwangan, Kec. Umbulharjo, Daerah Istimewa Yogyakarta",
+      "id": 4
+    },
+    "schedules": [],
+    "accountId": 1,
+    "id": 4
+  },
+  {
+    "name": "Farhan",
+    "facility": [
+      "TOILET",
+      "LUNCH"
+    ],
+    "price": {
+      "price": 12345.0,
+      "rebate": 0.0
+    },
+    "capacity": 123,
+    "busType": "REGULER",
+    "departure": {
+      "city": "DEPOK",
+      "stationName": "Terminal Jatijajar",
+      "address": "Jl. Jatijajar 1 No.04, Jatijajar, Kec. Tapos, Jawa Barat",
+      "id": 0
+    },
+    "arrival": {
+      "city": "DEPOK",
+      "stationName": "Terminal Jatijajar",
+      "address": "Jl. Jatijajar 1 No.04, Jatijajar, Kec. Tapos, Jawa Barat",
+      "id": 0
+    },
+    "schedules": [],
+    "accountId": 3,
+    "id": 5
+  }
+]

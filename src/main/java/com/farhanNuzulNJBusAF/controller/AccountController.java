@@ -115,8 +115,6 @@ public class AccountController implements BasicGetController<Account> {
         return new BaseResponse<>(false, "Gagal melakukan top up ", null);
     }
 
-//    @GetMapping("bus/getMyBus")
-//    public List<Bus> getMyBus(@RequestParam int accountId) {
-//        return Algorithm.<Bus>collect(getJsonTable(), b->b.accountId==accountId);}
+
 
 }

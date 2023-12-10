@@ -25,6 +25,7 @@ public class Bus extends Serializable {
         this.departure = departure;
         this.arrival = arrival;
         this.schedules = new ArrayList<>();
+        this.accountId = accountId;
     }
     
     public String toString() {
