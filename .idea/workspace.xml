@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0b13fc59-7f06-4822-a667-fdb6d7f9f44b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/Bus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BasicGetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BasicGetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/BusController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/controller/StationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/account.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/account.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/bus.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/bus.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/station.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/farhanNuzulNJBusAF/json/station.json" afterDir="false" />
